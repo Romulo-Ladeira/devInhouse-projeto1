@@ -1,0 +1,14 @@
+
+body{
+    background-color: rgb(164, 217, 224);
+}
+#listaTarefas{
+    list-style-type: none;
+}
+#tarefas{
+    background-color: azure;
+    width: 60vw;
+}
+li{
+    
+}
