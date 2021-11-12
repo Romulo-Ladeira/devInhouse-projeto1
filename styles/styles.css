@@ -10,5 +10,5 @@ body{
     width: 60vw;
 }
 li{
-    
+    display: flex;
 }
