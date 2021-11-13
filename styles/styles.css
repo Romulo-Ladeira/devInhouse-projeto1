@@ -12,21 +12,58 @@ footer {
   box-sizing: border-box;
 }
 header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(106, 206, 219);
     display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
-
 body{
     background-color: rgb(164, 217, 224);
 }
+main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#entrada{
+    margin-bottom: 20px;
+    min-width: 100px;
+    display: flex;
+    justify-content:center;
+}
 #listaTarefas{
+   
+    
     list-style-type: none;
 }
 #tarefas{
+    display: flex;
+    width: 700px;
+    min-width: 300px;
+
+    min-height: 500px;
+    justify-content: center;
     background-color: azure;
-    width: 60vw;
+    
+}
+ .btnExcluirTarefa{
+   
 }
 li{
+    line-break: auto;
+    padding: 4px;
+    width: 600px;
+    max-width: 600px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 .marcarFeito{
     order: -1;

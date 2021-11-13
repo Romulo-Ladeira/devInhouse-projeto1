@@ -61,6 +61,7 @@ btnTarefa.addEventListener('click',event => {
     }
    
     }
+    novaTarefa.value = ''
     
 })
 
@@ -112,8 +113,11 @@ function marcarCarregamento(){
 }
 
 function excluir(btn){
-    
-    let checkboxFilhoLi = btn.parentElement.children[1]
+    let confirmacao = window.confirm("Tem certeza que deseja excluir a tarefa?")
+    if(!confirmacao){
+
+    }else{
+        let checkboxFilhoLi = btn.parentElement.children[1]
     btn.parentElement.remove()
     let novoArray = []
     for(let i = 0; i < arrayCheckbox.length; i++ ){
@@ -124,6 +128,8 @@ function excluir(btn){
     }
     arrayCheckbox = novoArray
     salvarLista(arrayCheckbox)
+    }
+    
 }
 
  function salvarLista(_array){
